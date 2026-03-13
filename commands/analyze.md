@@ -18,10 +18,14 @@ If `$ARGUMENTS` is empty — analyze the entire screenplay.
 - Location and prop continuity — object appears/disappears, location changes without explanation
 - Character motivation gaps — actions without a clear reason
 
-**Genre contract (fiction only):**
+**Genre contract:**
 
-Read `${CLAUDE_PLUGIN_ROOT}/compass/fiction/genre-mechanics.md` — find the section for the project's genre. Check:
-- Are the **Must happen** obligations present in the screenplay?
+Read the genre mechanics file for the project type:
+- Fiction: `${CLAUDE_PLUGIN_ROOT}/compass/fiction/genre-mechanics.md`
+- Documentary: `${CLAUDE_PLUGIN_ROOT}/compass/doc/genre-mechanics.md`
+
+Find the section for the project's genre. Check:
+- Are the **Must happen** obligations present?
 - Are any **Forbidden** patterns present?
 
 **Structure — beat check (fiction only):**
