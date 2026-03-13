@@ -19,12 +19,12 @@ Read all files in scenes/ alphabetically — extract:
 
 Read analytics/compass_artifact.md if it exists — reference projects, genre analysis.
 
-Read the relevant genre file from compass/:
-- documentary portrait → compass/doc/portrait.md
-- cinema verité → compass/doc/verite.md
-- crime thriller → compass/fiction/thriller.md
-- black comedy → compass/fiction/black-comedy.md
-- sci-fi drama → compass/fiction/sci-drama.md
+Read the relevant genre file from ${CLAUDE_PLUGIN_ROOT}/compass/:
+- documentary portrait → ${CLAUDE_PLUGIN_ROOT}/compass/doc/portrait.md
+- cinema verité → ${CLAUDE_PLUGIN_ROOT}/compass/doc/verite.md
+- crime thriller → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/thriller.md
+- black comedy → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/black-comedy.md
+- sci-fi drama → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/sci-drama.md
 
 ## Step 2: Write unico_package.md
 

@@ -103,13 +103,13 @@ After confirmation:
 Read all created scenes/*.md.
 
 Read analytics/compass_artifact.md if it exists. If not — find the genre file:
-- crime thriller → compass/fiction/thriller.md
-- black comedy → compass/fiction/black-comedy.md
-- sci-fi drama → compass/fiction/sci-drama.md
-- coming-of-age → compass/fiction/coming-of-age.md
-- drama → compass/fiction/drama.md
-- documentary portrait → compass/doc/portrait.md
-- cinema verité → compass/doc/verite.md
+- crime thriller → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/thriller.md
+- black comedy → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/black-comedy.md
+- sci-fi drama → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/sci-drama.md
+- coming-of-age → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/coming-of-age.md
+- drama → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/drama.md
+- documentary portrait → ${CLAUDE_PLUGIN_ROOT}/compass/doc/portrait.md
+- cinema verité → ${CLAUDE_PLUGIN_ROOT}/compass/doc/verite.md
 
 Check:
 - **Chronology**: events follow a logical order, no time contradictions

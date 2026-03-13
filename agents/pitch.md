@@ -19,12 +19,12 @@ Read all files in scenes/ (alphabetically) — extract:
 
 Read analytics/compass_artifact.md if it exists — genre systems, reference films, diagnostics.
 
-Then identify the project's genre and read the relevant file from compass/:
-- documentary portrait → compass/doc/portrait.md
-- cinema verité → compass/doc/verite.md
-- crime thriller → compass/fiction/thriller.md
-- black comedy → compass/fiction/black-comedy.md
-- sci-fi drama → compass/fiction/sci-drama.md
+Then identify the project's genre and read the relevant file from ${CLAUDE_PLUGIN_ROOT}/compass/:
+- documentary portrait → ${CLAUDE_PLUGIN_ROOT}/compass/doc/portrait.md
+- cinema verité → ${CLAUDE_PLUGIN_ROOT}/compass/doc/verite.md
+- crime thriller → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/thriller.md
+- black comedy → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/black-comedy.md
+- sci-fi drama → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/sci-drama.md
 
 From the genre file, take: reference projects, genre conventions — for the "Reference Projects" section.
 
