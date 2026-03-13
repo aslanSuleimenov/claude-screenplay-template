@@ -2,11 +2,14 @@ Rewrite a scene/block based on notes. Argument: $ARGUMENTS (scene number and not
 
 ## Step 1 — Preparation
 
-1. Read CLAUDE.md — project type, characters, structure
+1. Read CLAUDE.md — project type, characters, structure, Seed
 2. Find the file in scenes/ by number
 3. Read the scene in full
-4. Read analytics/compass_artifact.md — genre systems
-5. Read analytics/avoid-ai-writing-tells.md — forbidden patterns
+4. Read analytics/compass_artifact.md if it exists — genre systems
+5. Read `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` — forbidden patterns
+6. Read the genre entry from the structural contracts:
+   - Fiction: `${CLAUDE_PLUGIN_ROOT}/compass/fiction/genre-mechanics.md`
+   - Documentary: `${CLAUDE_PLUGIN_ROOT}/compass/doc/genre-mechanics.md`
 
 ## Step 2 — Analyze the notes
 
@@ -22,9 +25,11 @@ Parse the notes from the argument. Common requests:
 
 Rewrite the scene taking into account:
 - The user's notes (top priority)
-- Genre systems from compass
+- Genre systems from compass_artifact.md
+- Genre structural contract — don't violate **Forbidden**, serve **Must happen** where possible
 - Forbidden AI patterns from avoid-ai-writing-tells.md
 - Scene format for the project type (fiction/documentary)
+- Seed from CLAUDE.md — if the scene can carry or echo the core image/metaphor without forcing it, do it
 
 Save to the same file.
 

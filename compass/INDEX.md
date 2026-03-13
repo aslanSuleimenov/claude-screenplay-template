@@ -2,7 +2,15 @@
 
 Reference files for genre theory, structural conventions, and benchmark films. No project-specific content.
 
-**Sources:** IMDB (27 official genres), Letterboxd (19), AFI (10 classic genres), Kinopoisk (~25), Wikipedia, MasterClass, StudioBinder, No Film School, PremiumBeat.
+---
+
+## Structural contracts
+
+| File | What it covers |
+|------|---------------|
+| `fiction/genre-mechanics.md` | Structural contracts for 26 fiction genres — promise, must happen, forbidden |
+| `doc/genre-mechanics.md` | Structural contracts for 7 documentary types |
+| `doc/interview-structure.md` | Interview as dramatic scene — entry, fracture, exit; POV as argument |
 
 ---
 

@@ -32,6 +32,11 @@ Check the screenplay for continuity errors. Argument: $ARGUMENTS (optional — s
 - Are all callbacks established in CLAUDE.md paid off?
 - Any unresolved threads (character appears and disappears)?
 
+### Seed / core image
+- If CLAUDE.md has a Seed field — does that image or metaphor appear in the screenplay? Where?
+- Does it echo across the structure, or only once?
+- If absent — note as a gap, not an error
+
 4. Output the report:
 
 ```
