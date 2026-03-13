@@ -39,7 +39,7 @@ Calculate expected beat positions from runtime in CLAUDE.md. Check whether these
 | Final image | ~99% | |
 
 Also check:
-- Does the protagonist have one clear external goal for the entire screenplay?
+- **Protagonist's dramatic need:** one clear external goal that drives the entire screenplay — can it be stated in one sentence? If not — flag it.
 - Does the final image mirror the opening image (transformation visible)?
 - Scenes that contribute nothing — no new information, no value change
 
@@ -74,7 +74,7 @@ Midpoint:         scene 09 ✓  (~48% — close)
 All is Lost:      ✗  (expected ~scene 14)
 Break into Three: ✗
 Final image:      ✗
-Protagonist goal: [stated / unclear]
+Protagonist goal: [one sentence / unclear — flag]
 
 GENRE CONTRACT  ([genre])
 Must happen — present:   [list or ✓ all covered]
@@ -115,9 +115,18 @@ If `$ARGUMENTS` is not empty:
    - Stakes rising?
    - Visual image without words?
    - Story engine running?
-5. Check against `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` — forbidden patterns?
-6. Point out specific problem lines
-7. Suggest fixes in BEFORE → AFTER format
-8. Answer: can this scene be cut without losing anything? If yes — what exactly would be lost, and can it be conveyed another way?
+5. Value shift and gap:
+   - What is the dominant value at the start of the scene (safety/danger, hope/despair, connection/isolation, truth/lie, power/powerlessness — or other)?
+   - What is it at the end?
+   - Did the protagonist attempt something and get an unexpected result (gap)? Or did everything go as expected?
+   - If no value shift — flag: the scene does not earn its place
+5. Check subtext:
+   - Does each character say one thing while wanting another? Or do they state their feelings and intentions directly?
+   - Is there a surface conflict and a real conflict — or only one?
+   - If a character explains their own emotions in dialogue — flag the specific line
+6. Check against `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` — forbidden patterns?
+7. Point out specific problem lines
+8. Suggest fixes in BEFORE → AFTER format
+9. Answer: can this scene be cut without losing anything? If yes — what exactly would be lost, and can it be conveyed another way?
 
 Save nothing. Analysis and recommendations only.

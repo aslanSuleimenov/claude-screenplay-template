@@ -30,8 +30,18 @@ Compare this character's speech to others: can you tell their lines apart withou
 | Character | Type of relationship | Dynamic (growing/falling/stable) |
 |-----------|---------------------|----------------------------------|
 
+### Wants / Needs / Says
+
+| Layer | What it is | From the text |
+|-------|-----------|---------------|
+| **Says** | What the character claims they want — stated explicitly in dialogue | |
+| **Wants** | What they are actually pursuing through their actions | |
+| **Needs** | What they must change or accept to resolve their inner conflict — often the opposite of what they want | |
+
+If Says = Wants = Needs — the character has no subtext. Flag it.
+
 ### Arc
-Where the character starts → where they end up
+Where the character starts → what the pressure reveals → where they end up (or refuse to go)
 
 ### Appearance / props
 All mentions of clothing, objects, physical details (with scene references)

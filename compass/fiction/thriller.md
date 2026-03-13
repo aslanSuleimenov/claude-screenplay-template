@@ -14,7 +14,6 @@ Index: `../INDEX.md`
 - [Greenlight Coverage: Thriller Screenplays Essentials](https://glcoverage.com/2024/08/07/thriller-screenplays/)
 - [Bang2write: 10 Quick Tips for Thriller Screenplays](https://bang2write.com/2015/11/10-quick-tips-about-writing-thriller-screenplays.html)
 - [ScreenCraft: Writing a Suspense Thriller the John Carpenter Way](https://screencraft.org/blog/writing-your-suspense-thriller-the-john-carpenter-way/)
-- James N. Frey — *How to Write a Damn Good Thriller*
 
 Benchmarks: *Sicario* (2015), *No Country for Old Men* (2007), *Prisoners* (2013), *Parasite* (2019), *Gone Girl* (2014), *Traffic* (2000), *Brother* (*Брат*, 1997, Balabanov), *Cargo 200* (*Груз 200*, 2007, Balabanov)
 
@@ -80,7 +79,7 @@ Three rules for a twist that works: **1.** All the clues have to be on screen be
 
 ## 5. Pace and Scene Rhythm
 
-Robert McKee: "Every scene must turn. Not one scene that doesn't turn." A scene "turns" when the value-laden state of the character shifts from positive to negative or vice versa. A scene that opens and closes on the same note is a non-event — a candidate for the cutting room.
+Every scene must turn. A scene "turns" when the value-laden state of the character shifts from positive to negative or vice versa. A scene that opens and closes on the same note is a non-event — a candidate for the cutting room.
 
 The law of diminishing returns: the same emotion lands fully the first time, halfway the second, and backfires the third. *Sicario* rotates scene types strictly: action → suspense → character scene → quiet. Kate's domestic moments at home make the next violence sequences land harder through contrast. Location changes refresh the energy: FBI offices → Juárez → tunnels → apartment → desert — each environment carries a new visual language.
 
@@ -94,7 +93,7 @@ The "good news / bad news" principle: every solution generates a new problem. Th
 
 ## 6. Moral Ambivalence
 
-Robert McKee: "The sympathy of the protagonist is determined not by his goodness but by the vileness of his enemies." The audience forgives the hero a great deal when the antagonist is worse. This is "moral comparativism" — we judge the hero not in absolute terms but relative to the alternative. The problem: if the gap between hero and villain is too wide, there's no moral complexity. You need a moment when the gap narrows.
+Audience sympathy for the protagonist is determined not by their goodness but by the comparative vileness of the antagonist. We judge the hero not in absolute terms but relative to the alternative — moral comparativism. The problem: if the gap between hero and villain is too wide, there's no moral complexity. You need a moment when the gap narrows.
 
 The most powerful tool for moral complexity is **parallel degradation**: hero and villain moving toward each other. Kate in *Sicario* begins as Alejandro's exact opposite — and by the end she's forced to sign a false report at gunpoint. She hasn't become Alejandro, but she's done what Alejandro does: submit to the system. Villeneuve builds this moment as a quiet catastrophe — not through confrontation, but through the impossibility of refusal.
 
