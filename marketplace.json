@@ -1,0 +1,15 @@
+{
+  "name": "claude-screenplay-template",
+  "plugins": [
+    {
+      "name": "screenplay",
+      "description": "Screenplay and AV-script writing toolkit — slash commands, format validation hooks, and MD→DOCX export.",
+      "source": {
+        "type": "github",
+        "url": "https://github.com/aslanSuleimenov/claude-screenplay-template",
+        "path": ".",
+        "release": "latest"
+      }
+    }
+  ]
+}
