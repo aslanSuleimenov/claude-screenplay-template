@@ -157,6 +157,14 @@ Reference moments for editing: [list of 3–5 scenes or images from this project
 - Characters: only what is actually in the screenplay — do not invent
 - Conflict — specific, not "good vs evil"
 - References — from compass_artifact or the compass genre file
+- **Soviet and Russian cinema is valid and encouraged as reference:** Tarkovsky (*Stalker*, *The Mirror*, *Andrei Rublev*), Balabanov (*Brother*, *Cargo 200*, *Of Freaks and Men*), Muratova (*The Asthenic Syndrome*, *Brief Encounters*), Zvyagintsev (*Leviathan*, *Elena*, *The Return*), Shepitko (*The Ascent*), Klimov (*Come and See*), German (*Hard to Be a God*, *My Friend Ivan Lapshin*), Panfilov, Sokurov. Use when the project's tone, cultural context, or moral weight matches.
+- Do not limit references to Hollywood — European, Asian, and post-Soviet cinema often fits better for CIS projects
 
 Save to analytics/unico_package.md.
 Report how many scenes you read and how many characters you described.
+
+## Export to DOCX
+
+After saving unico_package.md, tell the user:
+> "To export to DOCX: `python converter_MD_DOCX/unico_to_docx.py`
+> Output: versions/[project]_unico_v01.docx — formatted for UNICO submission."
