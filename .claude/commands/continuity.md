@@ -1,4 +1,4 @@
-Проверь сценарий на логические противоречия. Аргумент: $ARGUMENTS (опционально — диапазон сцен, например «10-20»).
+Check the screenplay for continuity errors. Argument: $ARGUMENTS (optional — scene range, e.g. «10-20»).
 
 1. Прочитай CLAUDE.md — персонажи, структура, место действия, время
 2. Прочитай все сцены из scenes/ (или указанный диапазон)

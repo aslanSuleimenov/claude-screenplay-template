@@ -1,6 +1,6 @@
 ---
 name: pitch
-description: Создаёт инвестиционный питч-документ для проекта. Запускай когда нужно подготовить презентацию сценария для инвестора, продюсера или питчинга. Пишет analytics/pitch.md.
+description: Creates an investment pitch document for the project. Run when you need to prepare a screenplay presentation for an investor, producer, or pitching event. Writes analytics/pitch.md.
 ---
 
 Ты создаёшь инвестиционный питч-документ для сценарного проекта.

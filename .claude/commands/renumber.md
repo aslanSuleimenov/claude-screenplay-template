@@ -1,4 +1,4 @@
-Перенумеруй сцены/блоки в scenes/. Аргумент: $ARGUMENTS (опционально — стартовый номер или диапазон).
+Renumber scenes/blocks in scenes/. Argument: $ARGUMENTS (optional — starting number or range).
 
 ## Шаг 1 — Прочитай состояние
 

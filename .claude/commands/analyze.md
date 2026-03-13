@@ -1,4 +1,4 @@
-Проанализируй сцену. Аргумент: $ARGUMENTS (номер или название сцены).
+Analyze a scene. Argument: $ARGUMENTS (scene number or title).
 
 1. Найди файл в scenes/ по номеру или названию
 2. Прочитай сцену целиком

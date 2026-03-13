@@ -1,4 +1,4 @@
-Собери карточку персонажа. Аргумент: $ARGUMENTS (имя персонажа).
+Build a character sheet. Argument: $ARGUMENTS (character name).
 
 1. Прочитай CLAUDE.md — найди персонажа в таблице
 2. Прочитай ВСЕ файлы из scenes/ по порядку

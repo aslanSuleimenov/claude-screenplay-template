@@ -1,4 +1,4 @@
-Покажи или создай структуру сценария на уровне beat sheet. Аргумент: $ARGUMENTS (опционально — «создать» для генерации placeholder-сцен).
+Show or create the screenplay structure as a beat sheet. Argument: $ARGUMENTS (optional — «create» to generate placeholder scenes).
 
 ## Режим 1 — Показать (по умолчанию)
 

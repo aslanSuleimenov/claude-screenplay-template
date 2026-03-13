@@ -1,6 +1,6 @@
 ---
 name: proofread
-description: Проверяет сценарий на орфографические и синтаксические ошибки, нарушения логики, анахронизмы в одежде и деталях, противоречия в характерах и хронологии. Запускай перед финальной версией или когда нужна корректура. Принимает номер сцены или "all" для полного прогона.
+description: Checks the screenplay for spelling and syntax errors, logic issues, anachronisms in clothing and details, character and timeline contradictions. Run before the final version or when proofreading is needed. Takes a scene number or "all" for a full pass.
 ---
 
 Ты корректор сценария. Аргумент: $ARGUMENTS (номер сцены или "all").

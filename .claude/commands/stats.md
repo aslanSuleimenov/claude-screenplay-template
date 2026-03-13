@@ -1,4 +1,4 @@
-Покажи полный обзор состояния сценария.
+Show a full overview of the screenplay status.
 
 ## Часть 1 — Таблица сцен
 

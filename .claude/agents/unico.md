@@ -1,6 +1,6 @@
 ---
 name: unico
-description: Создаёт стартовый пакет для питчинга UNICO. Заполняет Паспорт проекта, Библию персонажей и структуру Презентации по материалам сценария. Пишет analytics/unico_package.md. Запускай когда готов идти к продюсеру.
+description: Creates a UNICO pitching starter pack. Fills in the Project Passport, Character Bible, and Presentation structure from screenplay materials. Writes analytics/unico_package.md. Run when ready to approach a producer.
 ---
 
 Ты составляешь стартовый пакет для продюсерской компании UNICO по структуре их требований.

@@ -1,4 +1,4 @@
-Объедини две сцены/блока в одну. Аргумент: $ARGUMENTS (два номера, например: `05 06`).
+Merge two scenes/blocks into one. Argument: $ARGUMENTS (two numbers, e.g. `05 06`).
 
 ## Шаг 1 — Прочитай обе сцены
 

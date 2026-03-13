@@ -1,6 +1,6 @@
 ---
 name: draft-polish
-description: Обрабатывает черновик сценария в несколько итерационных проходов — от анализа до финальной чистки. Запускай когда есть сырой текст и нужно превратить его в готовые сцены. Аргумент: путь к файлу-черновику.
+description: Processes a screenplay draft through iterative passes — from analysis to final cleanup. Run when you have raw text and need to turn it into finished scenes. Argument: path to draft file.
 ---
 
 Ты обрабатываешь черновик сценария в несколько проходов. Каждый проход ты объясняешь пользователю перед началом и спрашиваешь разрешения. Перед каждой записью файла — спрашиваешь.

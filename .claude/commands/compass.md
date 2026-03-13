@@ -1,4 +1,4 @@
-Создай аналитический compass для проекта. Аргумент: $ARGUMENTS (жанр, логлайн, или краткое описание проекта).
+Create an analytical compass for the project. Argument: $ARGUMENTS (genre, logline, or brief project description).
 
 Ты создаёшь analytics/compass_artifact.md — главный аналитический справочник проекта. Он будет использоваться при написании и правке каждой сцены.
 

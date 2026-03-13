@@ -1,4 +1,4 @@
-Прочитай черновик сценария и раздели его на сцены/блоки. Аргумент: $ARGUMENTS (путь к файлу).
+Read a screenplay draft and split it into scenes/blocks. Argument: $ARGUMENTS (file path).
 
 ## Шаг 1 — Определи тип проекта
 

@@ -1,4 +1,4 @@
-Исследуй тему для сценария. Аргумент: $ARGUMENTS (тема исследования).
+Research a topic for the screenplay. Argument: $ARGUMENTS (research topic).
 
 1. Прочитай CLAUDE.md — жанр, место действия, контекст проекта
 2. Поищи в интернете (WebSearch) по теме: факты, статистика, реальные случаи, визуальные детали

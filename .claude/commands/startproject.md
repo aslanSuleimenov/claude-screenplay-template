@@ -1,4 +1,4 @@
-Инициализируй новый проект. Задай вопросы по одному, жди ответа на каждый.
+Initialize a new project. Ask questions one at a time, wait for each answer.
 
 ## Вопросы
 

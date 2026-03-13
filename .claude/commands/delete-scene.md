@@ -1,4 +1,4 @@
-Удали сцену/блок и перенумеруй последующие. Аргумент: $ARGUMENTS (номер сцены).
+Delete a scene/block and renumber following ones. Argument: $ARGUMENTS (scene number).
 
 ## Шаг 1 — Найди файл
 

@@ -1,4 +1,4 @@
-Перепиши сцену/блок по замечаниям. Аргумент: $ARGUMENTS (номер сцены и заметки, например: `05 усилить конфликт, убрать экспозицию`).
+Rewrite a scene/block based on notes. Argument: $ARGUMENTS (scene number and notes, e.g. `05 sharpen conflict, cut exposition`).
 
 ## Шаг 1 — Подготовка
 
