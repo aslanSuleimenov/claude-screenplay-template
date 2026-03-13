@@ -19,12 +19,19 @@ Read all files in scenes/ alphabetically — extract:
 
 Read analytics/compass_artifact.md if it exists — reference projects, genre analysis.
 
-Read the relevant genre file from ${CLAUDE_PLUGIN_ROOT}/compass/:
-- documentary portrait → ${CLAUDE_PLUGIN_ROOT}/compass/doc/portrait.md
-- cinema verité → ${CLAUDE_PLUGIN_ROOT}/compass/doc/verite.md
-- crime thriller → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/thriller.md
-- black comedy → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/black-comedy.md
-- sci-fi drama → ${CLAUDE_PLUGIN_ROOT}/compass/fiction/sci-drama.md
+Read the relevant compass file for the project's genre.
+
+**Lookup rule:** for each path below, check the local project first (`compass/[path]`). If the file exists there — read it. If not — read from `${CLAUDE_PLUGIN_ROOT}/compass/[path]`.
+
+- documentary portrait → `doc/portrait.md`
+- cinema verité → `doc/verite.md`
+- crime thriller → `fiction/thriller.md`
+- black comedy → `fiction/black-comedy.md`
+- sci-fi drama → `fiction/sci-drama.md`
+- drama → `fiction/drama.md`
+- coming-of-age → `fiction/coming-of-age.md`
+
+If the exact genre isn't listed, check `compass/INDEX.md` (local or plugin) for the closest match.
 
 ## Step 2: Write unico_package.md
 

@@ -193,23 +193,11 @@ Author: —
 
 ---
 
-## Step 6: Copy reference files from plugin
+## Step 6: Copy avoid-ai-writing-tells from plugin
 
-Read each file from the plugin and write to the project:
+Read `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` and write to `analytics/avoid-ai-writing-tells.md`.
 
-| Source | Destination |
-|--------|-------------|
-| `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` | `analytics/avoid-ai-writing-tells.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/INDEX.md` | `compass/INDEX.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/fiction/thriller.md` | `compass/fiction/thriller.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/fiction/black-comedy.md` | `compass/fiction/black-comedy.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/fiction/sci-drama.md` | `compass/fiction/sci-drama.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/fiction/coming-of-age.md` | `compass/fiction/coming-of-age.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/fiction/drama.md` | `compass/fiction/drama.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/doc/portrait.md` | `compass/doc/portrait.md` |
-| `${CLAUDE_PLUGIN_ROOT}/compass/doc/verite.md` | `compass/doc/verite.md` |
-
-Create directories `compass/fiction/` and `compass/doc/` before writing.
+**Compass files are NOT copied here.** Agents and commands read them directly from the plugin via `${CLAUDE_PLUGIN_ROOT}/compass/`. To get local editable copies, the user runs `/sync-plugin-files`.
 
 ---
 
@@ -224,7 +212,9 @@ Created:
 - CLAUDE.md
 - scenes/00_title.md
 - analytics/avoid-ai-writing-tells.md
-- compass/ (8 genre files)
+
+Genre compass: read from plugin (${CLAUDE_PLUGIN_ROOT}/compass/).
+To get local editable copies: /sync-plugin-files
 
 Next steps:
 - /split [path to draft] — break a draft into scenes
