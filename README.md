@@ -69,7 +69,7 @@ All auto-detect project type from `CLAUDE.md`.
 | `/new-scene 05 Bar` | Creates scene: slug line + action + dialogue | Creates block: VIDEO/AUDIO table |
 | `/rewrite 05 notes` | Rewrites scene by notes | Rewrites block by notes |
 | `/analyze 05` | Single scene: compass systems, subtext, value shift | Single block: compass, SOT check |
-| `/analyze` | Full script: beats, genre contract, logic, continuity, AI patterns | Full script: POV, interview structure, logic |
+| `/analyze` | Full script: beats, genre contract, logic, continuity, AI patterns, pacing (dead zones / overload) | Full script: POV, interview structure, logic, pacing |
 | `/character-sheet Name` | Arc, voice, wants/needs/says, contradictions | Subject card: appearances, SOT quotes |
 | `/continuity` | Time, geography, props, character knowledge, seed | Facts, chronology, names, supers |
 | `/research topic` | Web research → analytics/ (sensory details, jargon, counterintuitive facts) | Web research → analytics/ (real cases, SOT candidates, visual evidence) |
