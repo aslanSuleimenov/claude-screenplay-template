@@ -16,9 +16,9 @@ Create a new scene/block. Argument: $ARGUMENTS — number and title, e.g. `05 Ba
 
 5. Write the scene strictly following converter_MD_DOCX/README.md (section "Screenplay Format"):
    - `# Scene NN: Title`
-   - `**INT./EXT. LOCATION — TIME OF DAY**`
-   - Character names in **BOLD CAPS**
-   - One blank line between blocks, zero between name and dialogue
+   - `INT./EXT. LOCATION — TIME OF DAY` (plain text, no asterisks)
+   - Character names in CAPS (plain text, no asterisks)
+   - Exactly one blank line between blocks (action → name, dialogue → next action); NEVER two blank lines before a character name; zero blank lines between name and dialogue
 
 ## If type = documentary
 

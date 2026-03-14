@@ -317,6 +317,24 @@ Life and good film are asymmetrical.
 AI trained on advertising copy defaults to:
 "picturesque," "breathtaking," "clean and modern," "cozy"
 
+### 28. Action lines written as a solid block
+
+Action must breathe. Each beat — its own paragraph, separated by a blank line.
+
+Bad:
+```
+Директор выходит из театра. Достаёт папиросу. Прикуривает. Идёт. Папироса горит — он не затягивается.
+```
+
+Good:
+```
+Директор выходит из театра. Достаёт папиросу. Прикуривает.
+
+Идёт. Папироса горит — он не затягивается.
+```
+
+Rule: one thought, one paragraph. When the action shifts — break. No exceptions.
+
 ---
 
 ## How to write instead
@@ -340,3 +358,4 @@ AI trained on advertising copy defaults to:
 - [ ] No modal hedging ("may influence," «может стать»)?
 - [ ] Emotions are concrete, not "looks thoughtfully" / «смотрит задумчиво»?
 - [ ] No excessive dashes substituting for commas?
+- [ ] Each action beat in its own paragraph with a blank line between?

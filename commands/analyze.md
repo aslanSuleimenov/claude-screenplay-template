@@ -62,9 +62,9 @@ Also check:
 - Does the opening block establish a question (not answer it)? Does the closing block land somewhere the opening didn't predict?
 
 **Format (check against CLAUDE.md scene formatting rules):**
-- Heading format violations
+- Heading format violations (`# Scene NN:` or `# Block NN:`)
 - Missing slug lines (fiction) or missing VIDEO/AUDIO table (documentary)
-- Character name formatting errors
+- Character names with asterisks (`**NAME**`) — flag as old format, should be plain CAPS
 
 **AI writing patterns** (check against `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md`):
 - Rule of threes, emotional placeholders, dialogue that explains feelings

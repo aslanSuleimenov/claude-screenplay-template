@@ -35,11 +35,11 @@ Strictly per converter_MD_DOCX/README.md:
 ```markdown
 # Scene NN: Scene title
 
-**INT./EXT. LOCATION — TIME OF DAY**
+INT./EXT. LOCATION — TIME OF DAY
 
 Action description.
 
-**CHARACTER NAME**
+CHARACTER NAME
 *(parenthetical if any)*
 Dialogue text.
 ```
@@ -59,7 +59,7 @@ Strictly per converter_MD_DOCX/README.md:
 ## Step 5 — Extract characters/subjects
 
 ### Fiction
-Find all character names (lines in **BOLD CAPS** before dialogue).
+Find all character names (lines in CAPS before dialogue).
 
 ### Documentary
 Find all subjects (names after SOT, mentions in V/O, names in SUPER).

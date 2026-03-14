@@ -172,12 +172,9 @@ INDENT_DIAL = Inches(1.0)
 
 
 def is_character_line(s):
-    if s.startswith("**") and s.endswith("**") and len(s) < 80:
-        inner = s.replace("**", "").strip()
-        if any(kw in inner.upper() for kw in ["ИНТ.", "НАТ.", "INT.", "EXT.", "МОНТАЖ", "НАДПИСЬ"]):
-            return False
-        return bool(inner)
-    clean = re.sub(r'\s*\(.*\)\s*$', '', s.replace("**", "").strip())
+    if any(kw in s.upper() for kw in ["ИНТ.", "НАТ.", "INT.", "EXT.", "МОНТАЖ", "НАДПИСЬ"]):
+        return False
+    clean = re.sub(r'\s*\(.*\)\s*$', '', s.strip())
     if (clean.isupper() and 2 < len(clean) < 40
             and "." not in clean and clean not in ("КОНЕЦ", "КОНЕЦ.")):
         return True
@@ -185,7 +182,7 @@ def is_character_line(s):
 
 
 def extract_character_name(s):
-    clean = s.replace("**", "").strip()
+    clean = s.strip()
     m = re.match(r'^(.+?)\s*\((.+)\)\s*$', clean)
     if m:
         return m.group(1).strip().upper(), m.group(2).strip()
@@ -251,8 +248,7 @@ def convert_fiction(doc, scene_files):
                 continue
 
             # Slug line
-            if any(kw in s.upper() for kw in ["ИНТ.", "НАТ.", "INT.", "EXT."]) or \
-                    (s.startswith("**") and any(kw in s.upper() for kw in ["МОНТАЖ", "НАДПИСЬ"])):
+            if any(kw in s.upper() for kw in ["ИНТ.", "НАТ.", "INT.", "EXT.", "МОНТАЖ", "НАДПИСЬ"]):
                 text = s.replace("**", "").strip()
                 p = doc.add_paragraph()
                 p.paragraph_format.space_before = Pt(12)

@@ -138,17 +138,17 @@ Strictly per screenplay format. Quick rules:
 
 # Scene 01: Title
 
-**INT./EXT. LOCATION — TIME OF DAY**
+INT./EXT. LOCATION — TIME OF DAY
 
 Action description. Present tense, third person. Max 4 lines per paragraph.
 
-**CHARACTER NAME**
+CHARACTER NAME
 *(parenthetical)*
 Dialogue text.
 
 - ONE blank line between blocks; ZERO between name and dialogue
-- Names — **bold caps**: `**NAME**`
-- Slug line — **bold**: `**INT. LOCATION — DAY**`
+- Names — CAPS, plain text (no asterisks)
+- Slug line — plain text: `INT. LOCATION — DAY`
 - First appearance: `NAME (age)` in caps within action text
 - Do not use: `FADE OUT.`, `CUT TO:`, `CLOSE ON:`
 - Numbers in dialogue — written out as words
