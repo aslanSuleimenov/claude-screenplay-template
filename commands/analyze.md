@@ -49,6 +49,11 @@ Also check:
 - Does the final image mirror the opening image (transformation visible)?
 - Scenes that contribute nothing — no new information, no value change
 - **Attractor distribution:** every 7–10 minutes there should be an emotional impact — revelation, reversal, humor, shock, sudden intimacy. Map the attractors across the screenplay. Flag zones longer than 10 minutes with no attractor.
+- **Pacing diagnosis:**
+  - For each scene mark value shift: present (+) or absent (–). One-word characterization: reversal / confrontation / quiet / exposition / dead.
+  - Dead zone: 3+ consecutive scenes marked (–) or "exposition/dead" — audience disengages.
+  - Overload: 3+ consecutive scenes at peak conflict (life/death stakes, direct confrontation, climactic pressure) — audience fatigues, impact diminishes.
+  - Read position before flagging: a quiet scene after All is Lost (~75%) is structural breathing room, not a dead zone. A dead zone in Fun and Games (20–50%) is a problem. Use beat positions from the check above as context.
 
 **Structure — documentary (no beat map, check instead):**
 - Is there a clear POV / argument? Or just a sequence of facts? A documentary without a filmmaker's position is not neutral — it's empty.
@@ -94,6 +99,14 @@ ATTRACTOR MAP  (fiction)
 ~min 0–10:   [scene NN — type of attractor or ✗ gap]
 ~min 10–20:  [scene NN — type of attractor or ✗ gap]
 ...
+
+PACING
+NN [+/–] [reversal / confrontation / quiet / exposition / dead]
+NN [+/–] ...
+...
+Dead zones:   [scenes NN–NN — N min without value shift / none]
+Overload:     [scenes NN–NN — N min at peak conflict / none]
+Notes:        [e.g. "quiet at scene 14 is intentional — post–All is Lost breathing room"]
 
 STRUCTURE ISSUES
 [issue or observation]
