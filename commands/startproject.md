@@ -198,9 +198,11 @@ Author: —
 
 ---
 
-## Step 6: Copy avoid-ai-writing-tells from plugin
+## Step 6: Copy files from plugin
 
 Read `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` and write to `analytics/avoid-ai-writing-tells.md`.
+
+Read all files from `${CLAUDE_PLUGIN_ROOT}/converter_MD_DOCX/` and write to `converter_MD_DOCX/` in the current project.
 
 **Compass files are NOT copied here.** Agents and commands read them directly from the plugin via `${CLAUDE_PLUGIN_ROOT}/compass/`. To get local editable copies, the user runs `/sync-plugin-files`.
 
@@ -225,11 +227,13 @@ Created:
 - CLAUDE.md
 - scenes/00_title.md
 - analytics/avoid-ai-writing-tells.md
+- converter_MD_DOCX/
 - memory/
 - START_HERE.md
 
 Genre compass: read from plugin (${CLAUDE_PLUGIN_ROOT}/compass/).
 To get local editable copies: /sync-plugin-files
+To update converter after plugin upgrade: /sync-plugin-files
 
 Next steps:
 - /split [path to draft] — break a draft into scenes

@@ -8,9 +8,10 @@ Compile the screenplay into DOCX.
    - Gaps in numbering (e.g.: 01, 02, 04 — 03 is missing)
    - If there are problems — list them and ask whether to continue
 4. Run the converter:
+   ```bash
+   python converter_MD_DOCX/md_to_docx.py
    ```
-   python "${CLAUDE_PLUGIN_ROOT}/converter_MD_DOCX/md_to_docx.py"
-   ```
+   If `converter_MD_DOCX/md_to_docx.py` is not found — tell the user to run `/sync-plugin-files` to copy it from the plugin.
 5. Output the result: file path, number of scenes, number of paragraphs
 6. If there are errors — show them and suggest a fix
 

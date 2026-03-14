@@ -32,7 +32,14 @@ Also sync the structural contract and reference files that may not be listed in 
 
 ---
 
-## Step 3: Summary
+## Step 3: Sync converter
+
+Read all files from `${CLAUDE_PLUGIN_ROOT}/converter_MD_DOCX/` and write them to `converter_MD_DOCX/` in the current project.
+Report each file: "✓ converter_MD_DOCX/[filename]"
+
+---
+
+## Step 4: Summary
 
 ```
 Sync complete.
@@ -40,7 +47,7 @@ Sync complete.
 Updated:
 - analytics/avoid-ai-writing-tells.md
 - compass/ (N files)
+- converter_MD_DOCX/ (N files)
 
-Local compass files now take precedence — edit them freely for this project.
-To reset to plugin defaults, run /sync-plugin-files again.
+To update again after a plugin upgrade, run /sync-plugin-files.
 ```

@@ -154,5 +154,5 @@ Report how many scenes you read and how many characters you described.
 ## Export to DOCX
 
 After saving unico_package.md, tell the user:
-> "To export to DOCX: `python "${CLAUDE_PLUGIN_ROOT}/converter_MD_DOCX/unico_to_docx.py"`
+> "To export to DOCX: `python converter_MD_DOCX/unico_to_docx.py`
 > Output: versions/[project]_unico_v01.docx — formatted for UNICO submission."

@@ -23,6 +23,10 @@ SZ_SUB = Pt(14)
 SZ_TITLE = Pt(24)
 
 BASE = Path(__file__).parent.parent
+# If launched from the project root (e.g. via `python converter_MD_DOCX/md_to_docx.py`),
+# prefer cwd so relative paths work regardless of where the script physically lives.
+if (Path.cwd() / "scenes").exists():
+    BASE = Path.cwd()
 scenes_dir = BASE / "scenes"
 versions_dir = BASE / "versions"
 
@@ -115,25 +119,46 @@ def setup_page(doc, orientation="portrait"):
             sec.orientation = WD_ORIENT.LANDSCAPE
 
 
-def process_title_page(doc, file_lines):
-    """Обработка файла 00_* как титульной страницы."""
-    for line in file_lines:
-        s = line.strip()
-        if not s or s == "---" or s.startswith("<!--") or s.startswith("<div"):
-            continue
-        if s.startswith("# "):
-            text = s[2:].strip()
-            spacer = doc.add_paragraph()
-            spacer.paragraph_format.space_before = Pt(200)
-            p = doc.add_paragraph()
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p.paragraph_format.space_after = Pt(12)
-            add_run(p, text.upper(), bold=True, size=SZ_TITLE)
-            continue
+def make_title_page(doc):
+    """Генерация титульной страницы из CLAUDE.md."""
+    claude_md = BASE / "CLAUDE.md"
+    title = "МОИ ИГРУШКИ"
+    logline = ""
+    genre = ""
+    if claude_md.exists():
+        text = claude_md.read_text(encoding="utf-8-sig")
+        m = re.search(r'\*\*Название:\*\*\s*(.+)', text)
+        if m:
+            title = m.group(1).strip()
+        m = re.search(r'\*\*Логлайн:\*\*\s*(.+)', text)
+        if m:
+            logline = m.group(1).strip()
+        m = re.search(r'\*\*Жанр:\*\*\s*(.+)', text)
+        if m:
+            genre = m.group(1).strip()
+
+    # Отступ сверху ~1/3 страницы
+    spacer = doc.add_paragraph()
+    spacer.paragraph_format.space_before = Pt(180)
+
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_after = Pt(24)
+    add_run(p, title.upper(), bold=True, size=SZ_TITLE)
+
+    if genre:
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        text = s.replace("**", "").replace("*", "")
-        add_run(p, text, size=SZ)
+        p.paragraph_format.space_after = Pt(6)
+        add_run(p, genre, size=SZ)
+
+    if logline:
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(24)
+        p.paragraph_format.space_after = Pt(6)
+        add_run(p, logline, italic=True, size=SZ)
+
     doc.add_page_break()
 
 
@@ -169,16 +194,13 @@ def extract_character_name(s):
 
 def convert_fiction(doc, scene_files):
     setup_page(doc, "portrait")
+    make_title_page(doc)
     scene_count = 0
     prev_was_blank = False
     last_type = None
 
     for filepath in scene_files:
         file_lines = filepath.read_text(encoding="utf-8-sig").splitlines()
-
-        if filepath.stem.startswith("00"):
-            process_title_page(doc, file_lines)
-            continue
 
         for line in file_lines:
             s = line.strip()
@@ -194,6 +216,9 @@ def convert_fiction(doc, scene_files):
 
             had_blank = prev_was_blank
             prev_was_blank = False
+            # Пустая строка разрывает диалог — сбросить тип
+            if had_blank and last_type in ("dialogue", "paren"):
+                last_type = "action"
 
             clean = s.replace("**", "").replace("*", "").strip()
 
@@ -271,19 +296,14 @@ def convert_fiction(doc, scene_files):
                 name, paren = extract_character_name(s)
                 p = doc.add_paragraph()
                 p.paragraph_format.left_indent = INDENT_CHAR
-                p.paragraph_format.space_before = Pt(6)
+                p.paragraph_format.space_before = Pt(12)
                 p.paragraph_format.space_after = Pt(0)
                 add_run(p, f"{name} ({paren})" if paren else name, bold=True)
                 last_type = "character"
                 continue
 
-            # Блок цитаты (палитра)
+            # Блок цитаты (заметки, палитра) — пропускаем
             if s.startswith("> "):
-                text = s[2:].replace("**", "").replace("*", "").strip()
-                p = doc.add_paragraph()
-                p.paragraph_format.space_before = Pt(3)
-                add_run(p, text, italic=True, size=Pt(10))
-                last_type = "action"
                 continue
 
             # Обычный текст
@@ -294,12 +314,13 @@ def convert_fiction(doc, scene_files):
             p = doc.add_paragraph()
             if last_type in ("character", "paren", "dialogue"):
                 p.paragraph_format.left_indent = INDENT_DIAL
+                p.paragraph_format.right_indent = INDENT_DIAL
                 p.paragraph_format.space_before = Pt(0)
                 p.paragraph_format.space_after = Pt(0)
                 add_run(p, text)
                 last_type = "dialogue"
             else:
-                p.paragraph_format.space_before = Pt(6) if had_blank else Pt(0)
+                p.paragraph_format.space_before = Pt(12) if had_blank else Pt(0)
                 p.paragraph_format.space_after = Pt(0)
                 add_run(p, text)
                 last_type = "action"
@@ -381,10 +402,6 @@ def convert_documentary(doc, scene_files):
 
     for filepath in scene_files:
         file_lines = filepath.read_text(encoding="utf-8-sig").splitlines()
-
-        if filepath.stem.startswith("00"):
-            process_title_page(doc, file_lines)
-            continue
 
         i = 0
         while i < len(file_lines):
