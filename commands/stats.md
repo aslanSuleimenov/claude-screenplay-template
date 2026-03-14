@@ -16,7 +16,7 @@ Show a full overview of the screenplay status.
 6. Cross-check with the actual files: are all beats present, any gaps in numbering?
 7. Output:
    - Which structural beats are written, which are not
-   - Current runtime (~170 words = 1 min screen time)
+   - Current runtime (fiction: ~170 words = 1 min; documentary AV: ~340 words = 2 min)
    - Deviation from target runtime
 
 ## Part 3 — Detailed statistics

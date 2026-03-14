@@ -25,7 +25,7 @@ Extract from the text:
 - **Title** — is it in the text? If not — suggest options and ask
 - **Type** (fiction / documentary) — take from CLAUDE.md; if empty — determine from the text, ask for confirmation
 - **Genre** — determine from content; if multiple options — show them, ask
-- **Runtime** — is it in CLAUDE.md? If not — ask; benchmark: 170 words ≈ 1 min (fiction), 340 words ≈ 2 min (vertical)
+- **Runtime** — is it in CLAUDE.md? If not — ask; benchmark: 170 words ≈ 1 min (fiction), 340 words ≈ 2 min (documentary AV)
 - **Scene count** — how many logical episodes are in the draft; how many are needed for the stated runtime
 
 For each unclear field — ask a separate question via AskUserQuestion, not all at once.

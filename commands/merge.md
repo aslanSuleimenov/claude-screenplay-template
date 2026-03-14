@@ -7,7 +7,11 @@ Merge two scenes/blocks into one. Argument: $ARGUMENTS (two numbers, e.g. `05 06
 3. Read the full contents of both files
 4. Show the user a brief summary of both and ask for confirmation
 
-## Step 2 — Merge
+## Step 2 — Backup
+
+Before merging — create a backup: copy both files' content into `versions/backup_YYYYMMDD_HHMM_merge_NN_MM.md` (scenes separated by `---`).
+
+## Step 3 — Merge
 
 The first file (lower number) becomes the merged file:
 
@@ -21,21 +25,21 @@ The first file (lower number) becomes the merged file:
 - Merge the tables: rows from the second table are added after the first
 - If different topics — add a visual divider `---` between them
 
-## Step 3 — Delete the second file
+## Step 4 — Delete the second file
 
 Delete the file with the higher number.
 
-## Step 4 — Renumber following files
+## Step 5 — Renumber following files
 
 If there are files with numbers higher than the deleted one — renumber:
 - Two-phase rename using temp names
 - Update headings inside the files
 
-## Step 5 — Update CLAUDE.md
+## Step 6 — Update CLAUDE.md
 
 - Update the scenes table (merged row + renumbering)
 - Add an entry to "Change log"
 
-## Step 6 — Summary
+## Step 7 — Summary
 
 Output the result: what was merged, which files were renumbered.

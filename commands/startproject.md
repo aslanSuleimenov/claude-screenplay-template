@@ -42,7 +42,7 @@ Fields to fill:
 10. **Period**
 11. **Currency and locale** (names, place names, character language)
 12. **Runtime** in minutes
-13. **Structural model** (three-act / five-loop / other)
+13. **Structural model** (three-act / five-loop / other) — ask only if the user mentioned a specific structure or if the draft has an unusual shape. Otherwise default to three-act and don't ask.
 
 If a field was extracted from the file with confidence — use it, do not ask. If uncertain — ask.
 
