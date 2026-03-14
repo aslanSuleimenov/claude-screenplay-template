@@ -11,7 +11,7 @@ Argument at invocation: `$ARGUMENTS` — path to the draft file relative to the 
 
 ## Setup
 
-Read CLAUDE.md — get the project type (fiction / documentary / vertical microdrama), title, genre, logline, runtime.
+Read CLAUDE.md — get the project type (fiction / documentary), title, genre, logline, runtime.
 
 Read the draft file at `$ARGUMENTS`.
 
@@ -23,7 +23,7 @@ Create a backup: copy the draft to `versions/backup_draft_YYYYMMDD.md` (today's 
 
 Extract from the text:
 - **Title** — is it in the text? If not — suggest options and ask
-- **Type** (fiction / documentary / vertical microdrama) — take from CLAUDE.md; if empty — determine from the text, ask for confirmation
+- **Type** (fiction / documentary) — take from CLAUDE.md; if empty — determine from the text, ask for confirmation
 - **Genre** — determine from content; if multiple options — show them, ask
 - **Runtime** — is it in CLAUDE.md? If not — ask; benchmark: 170 words ≈ 1 min (fiction), 340 words ≈ 2 min (vertical)
 - **Scene count** — how many logical episodes are in the draft; how many are needed for the stated runtime
@@ -102,26 +102,20 @@ After confirmation:
 
 Read all created scenes/*.md.
 
-Read analytics/compass_artifact.md if it exists. If not — find the genre file.
+Read analytics/compass_artifact.md if it exists.
 
-**Lookup rule:** for each path below, check the local project first (`compass/[path]`). If the file exists there — read it. If not — read from `${CLAUDE_PLUGIN_ROOT}/compass/[path]`.
+Read the genre compass file: check local `compass/` first, then `${CLAUDE_PLUGIN_ROOT}/compass/`. Use `${CLAUDE_PLUGIN_ROOT}/compass/INDEX.md` to find the right file for the project's genre.
 
-- crime thriller → `fiction/thriller.md`
-- black comedy → `fiction/black-comedy.md`
-- sci-fi drama → `fiction/sci-drama.md`
-- coming-of-age → `fiction/coming-of-age.md`
-- drama → `fiction/drama.md`
-- documentary portrait → `doc/portrait.md`
-- cinema verité → `doc/verite.md`
-
-If the exact genre isn't listed, check `compass/INDEX.md` (local or plugin) for the closest match.
+Read the structural contract for the genre:
+- Fiction: `${CLAUDE_PLUGIN_ROOT}/compass/fiction/genre-mechanics.md`
+- Documentary: `${CLAUDE_PLUGIN_ROOT}/compass/doc/genre-mechanics.md`
 
 Check:
 - **Chronology**: events follow a logical order, no time contradictions
 - **Characters**: a character behaves consistently across scenes, no unmotivated reversals
 - **Props and details**: if there's a knife in scene 3, it can't vanish without explanation
-- **Genre norms**: no violations from the compass file
-- **Empty scenes**: no scenes without conflict or event
+- **Genre contract**: check **Must happen** obligations and **Forbidden** patterns from genre-mechanics.md
+- **Empty scenes**: no scenes without conflict or value shift
 
 Output a list of issues by scene:
 ```
@@ -160,7 +154,7 @@ Explain before starting:
 
 Ask: "Shall we start?"
 
-Read analytics/avoid-ai-writing-tells.md.
+Read `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md`.
 
 Check all scenes. Key markers:
 - Rule of three: exactly 3 adjectives in a row

@@ -19,19 +19,7 @@ Read all files in scenes/ alphabetically — extract:
 
 Read analytics/compass_artifact.md if it exists — reference projects, genre analysis.
 
-Read the relevant compass file for the project's genre.
-
-**Lookup rule:** for each path below, check the local project first (`compass/[path]`). If the file exists there — read it. If not — read from `${CLAUDE_PLUGIN_ROOT}/compass/[path]`.
-
-- documentary portrait → `doc/portrait.md`
-- cinema verité → `doc/verite.md`
-- crime thriller → `fiction/thriller.md`
-- black comedy → `fiction/black-comedy.md`
-- sci-fi drama → `fiction/sci-drama.md`
-- drama → `fiction/drama.md`
-- coming-of-age → `fiction/coming-of-age.md`
-
-If the exact genre isn't listed, check `compass/INDEX.md` (local or plugin) for the closest match.
+Read `${CLAUDE_PLUGIN_ROOT}/compass/INDEX.md` to find the compass file for the project's genre. Check local `compass/` first — if the file exists there, use it. Otherwise read from `${CLAUDE_PLUGIN_ROOT}/compass/`.
 
 ## Step 2: Write unico_package.md
 
@@ -152,7 +140,7 @@ Reference moments for editing: [list of 3–5 scenes or images from this project
 
 ## Writing rules
 
-- Professional tone, no AI patterns from analytics/avoid-ai-writing-tells.md
+- Professional tone, no AI patterns from `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md`
 - Super-idea — one specific sentence, not an abstraction
 - Characters: only what is actually in the screenplay — do not invent
 - Conflict — specific, not "good vs evil"
@@ -166,5 +154,5 @@ Report how many scenes you read and how many characters you described.
 ## Export to DOCX
 
 After saving unico_package.md, tell the user:
-> "To export to DOCX: `python converter_MD_DOCX/unico_to_docx.py`
+> "To export to DOCX: `python "${CLAUDE_PLUGIN_ROOT}/converter_MD_DOCX/unico_to_docx.py"`
 > Output: versions/[project]_unico_v01.docx — formatted for UNICO submission."

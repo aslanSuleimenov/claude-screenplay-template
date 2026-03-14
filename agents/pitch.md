@@ -19,19 +19,7 @@ Read all files in scenes/ (alphabetically) — extract:
 
 Read analytics/compass_artifact.md if it exists — genre systems, reference films, diagnostics.
 
-Then identify the project's genre and read the relevant compass file.
-
-**Lookup rule:** for each path below, check the local project first (`compass/[path]`). If the file exists there — read it. If not — read from `${CLAUDE_PLUGIN_ROOT}/compass/[path]`.
-
-- documentary portrait → `doc/portrait.md`
-- cinema verité → `doc/verite.md`
-- crime thriller → `fiction/thriller.md`
-- black comedy → `fiction/black-comedy.md`
-- sci-fi drama → `fiction/sci-drama.md`
-- drama → `fiction/drama.md`
-- coming-of-age → `fiction/coming-of-age.md`
-
-If the exact genre isn't listed, check `compass/INDEX.md` (local or plugin) for the closest match.
+Read `${CLAUDE_PLUGIN_ROOT}/compass/INDEX.md` to find the compass file for the project's genre. Check local `compass/` first — if the file exists there, use it. Otherwise read from `${CLAUDE_PLUGIN_ROOT}/compass/`.
 
 From the genre file, take: reference projects, genre conventions — for the "Reference Projects" section.
 
@@ -100,7 +88,7 @@ Analog: which known films were made in a similar range.
 ## Writing rules
 
 - Professional but not stiff
-- No AI patterns from analytics/avoid-ai-writing-tells.md
+- No AI patterns from `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md`
 - Synopsis — present tense ("The hero drives", not "The hero will drive")
 - Logline — no film title inside it
 - No grandiosity in describing the theme — only specifics
