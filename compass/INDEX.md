@@ -4,6 +4,17 @@ Reference files for genre theory, structural conventions, and benchmark films. N
 
 ---
 
+## Character
+
+| File | What it covers |
+|------|---------------|
+| `character/archetypes.md` | Archetypal functions — eight roles, Propp, orchestration |
+| `character/wound-and-want.md` | Ghost → misbelief → want vs need → transformation arc |
+| `character/voice.md` | Distinct voice — belief, subtext, syntax, dialogue |
+| `character/antagonist.md` | Antagonist as mirror, four-corner opposition, three models |
+
+---
+
 ## Structural contracts
 
 | File | What it covers |
